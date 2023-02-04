@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WASM • ECharts • Ex</title>
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+    <link data-trunk rel="rust" />
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex: auto;
+        justify-content: space-evenly;
+      }
+      .item {
+        border: 1px solid blue;
+        border-radius: 20px;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 style="text-align: center;">WASM ECharts examples </h2>
+    <div class="container">
+      <div class="item">echarts_init</div>
+      <div class="item">echarts_init2</div>
+      <div class="item">echarts_init3</div>
+    </div>
+    <div class="container">
+      <div id="plot-div"></div>
+      <div id="dyna_plot"></div>
+      <div id="dyna_plot2"></div>
+    </div>
+  </body>
+</html>
